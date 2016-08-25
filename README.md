@@ -103,3 +103,5 @@ Quanto a estrutura eu prefiro a convenção **folder by feature** ao invés de *
         - index.html
 - /vendors
 ```
+
+## 6) [Solução aqui](06)
