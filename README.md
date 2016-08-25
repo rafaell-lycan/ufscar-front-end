@@ -1,10 +1,8 @@
 # ufscar-front-end
 
-#### Soluções:
+## 1) [Solução aqui](01)
 
-1) [Solução aqui](01)
-
-2) Soluções:
+## 2) Soluções:
 ```javascript
 /**
 * A DOM API não possui o método "getElementByID";
@@ -48,9 +46,9 @@ As últimas considerações são:
 2. `receberValor` é responsável por exibir 2 prompt's ao usuário para coletar os valores de `@altura` e `@base` de um triângulo, que ao final do processo passa as informações para a função `calcAreaTriangulo`;
 3. `calcAreaTriangulo` calcula a área do triângulo baseado nos 2 parâmetros `@altura` e `@base` e com isso reescreve o documento html com o resultado;
 
-3) [Solução aqui](03)
+## 3) [Solução aqui](03)
 
-4) ***Explique com suas palavras qual a função da factory “Agenda”.***
+## 4) ***Explique com suas palavras qual a função da factory “Agenda”.***
 
 Primeiramente **factory** e **services** tem exatamente a mesma função no ecosistema do Angular 1, ambos são singletons podem ser utilizados com passagem de referência sem a necessidade de criar instancias, porem, no caso especifico de **factory** é possível utilizar a palavra `new` afim de criar uma nova instância na mémoria e não ter informações shared entre controllers e serviços;
 
@@ -72,7 +70,7 @@ function Agenda($resource) {
 
 Só é necessário utilizar o segundo parâmetro como objeto caso você precise informar que `:id` não segue a convenção, do contrário ele encontrará o atributo `id` no próprio recurso. Também não acho bom utilizar `action` como parâmetro do recurso, isso fere alguns princípios do REST como utilizar os verbos HTTP.
 
-5) ***Como devo iniciar um projeto em AngularJS usando single page application (SPA). Explique com suas palavras e faça um exemplo da estrutura inicial do projeto.***
+## 5) ***Como devo iniciar um projeto em AngularJS usando single page application (SPA). Explique com suas palavras e faça um exemplo da estrutura inicial do projeto.***
 
 Primeiro eu analisaria o tamanho e escopo do projeto; Segundo verificaria os módulos necessários que já estão disponíveis e outras coisas que eu poderia aproveitar e isolar em serviços da aplicação.
 
@@ -91,7 +89,7 @@ Quanto a estrutura eu prefiro a convenção **folder by feature** ao invés de *
         -/user.controller.js
         -/user.service.js
         -/user-validations.service.js
-        -/user.template.js
+        -/user.template.html
     -/utils
         -/awesome-utils.js
     - application.js
