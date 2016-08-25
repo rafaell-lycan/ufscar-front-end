@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Calcular a área de um triângulo</title>
+<meta charset="utf-8"/>
+<script>
+  function receberValor() {
+    var altura = prompt("Informar a altura do triângulo: ");
+    var base = prompt("Informar a base do triângulo: ");
+    calcAreaTriangulo(altura,base);
+  }
+
+   function calcAreaTriangulo(altura,base) {
+     var resultado = (altura*base)/2;
+     document.write("O resultado é "+resultado);
+   }
+
+  window.onload = function() {
+    document.getElementById("btnCalcular").onclick = receberValor;
+  }
+</script>
+</head>
+<body>
+  Calcular a área de um triângulo
+<button name="btnCalcular" id="btnCalcular">Área em m&sup2</button>
+</body>
+</html>
